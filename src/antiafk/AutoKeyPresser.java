@@ -56,6 +56,8 @@ public class AutoKeyPresser implements ActionListener {
 	public void start() {
 		this.isStopped = false;
 		this.updateLabelState();
+		
+		// Ajouter un petit délai avant de commencer à appuyer aléatoirement sur les touches
 		wait((int)(DELAY_SECONDS * 0.5) * 1000);
 		this.presserTimer.start();
 	}
